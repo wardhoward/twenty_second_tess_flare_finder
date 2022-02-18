@@ -10,6 +10,9 @@ Place TESS light curve fits files downloaded from MAST (either 2 min or 20 sec c
 
 where 4.5-sigma is currently hard-coded (easy to change) and two versions of the get_flare_candidates() function are defined in the helper function section. One version is get_flare_candidates_20sec() for fast-cadence light curves and the other is get_flare_candidates_2min() for 2 min cadence. The main difference is in better outlier suppression for 20 sec cadence where it is needed. You will need to specify which version you want to use by commenting out one of the two options. The 2 min version is currently uncommented at line 748.
 
+## Vetting
+Next, candidates must be vetted by eye to remove spurious detections. I find doing this as a three step process is helpful. First, click through the full light curves with XXX.py to determine and then exclude from further consideration which non-flaring stars are included in the results. Once that is done, then click through each flare candidate in each light curve with XXX.py and make a CSV or TXT list of which candidates are valid. Finally, look through the TESS Target Pixel Files of what is left if uncertainty remains about particular candidates.
+
 Vetting steps
 
 Confirmation steps
