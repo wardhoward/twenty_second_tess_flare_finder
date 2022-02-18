@@ -1,7 +1,7 @@
 # twenty_second_tess_flare_finder
 [under construction] A Python-based set of tools developed for TESS GO 3174 in order to find flares in 20 second cadence and 2 min cadence TESS light curves. A tool to estimate the flare temperature from the T and Evryscope g' passbands is also included.
 
-# Quick start:
+## Finding the initial set of flare candidates:
 Initial flare candidates are found using the identify_tess_flare_candidates_step_1 code, which has a lot of helper functions at the top and the main code at the bottom. It can be run as 
 > python2 identify_tess_flare_candidates_step_1.py &
 
